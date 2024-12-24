@@ -1,1 +1,1 @@
-uv python install 3.13
+uv python install 3.10

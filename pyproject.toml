@@ -3,21 +3,25 @@ name = "silk"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.10"
 dependencies = [
     "pydantic-settings>=2.7.0",
     "pydantic>=2.10",
+    "pymongo>=4.10.1",
+    "requests>=2.32.3",
+    "loguru>=0.7.3",
 ]
 
 [dependency-groups]
 dev = [
     "mypy>=1.14.0",
     "ruff>=0.8.4",
+    "types-requests>=2.32.0.20241016",
 ]
 
 [tool.ruff]
-# Set the maximum line length to 79.
-line-length = 79
+# Set the maximum line length to 120.
+line-length = 120
 
 [tool.ruff.lint]
 # Add the `line-too-long` rule to the enforced rule set.
